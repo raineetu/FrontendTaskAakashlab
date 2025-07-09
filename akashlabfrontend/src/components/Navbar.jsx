@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed w-full z-50 flex justify-between items-center py-4 px-6 md:px-12 bg-gray-100 ${
+        className={`fixed w-full z-50 flex justify-between items-center py-4 px-6 md:px-12 shadow-md ${
           scroll ? "bg-opacity-50 backdrop-blur-lg shadow-md" : ""
         }`}
       >
