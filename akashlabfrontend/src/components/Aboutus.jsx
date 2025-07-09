@@ -4,7 +4,7 @@ const Aboutus = () => {
   return (
     <div className="pt-20 bg-gray-50">
       {/* Section Heading */}
-      <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12 underline decoration-orange-400">
+      <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-800  ">
         About Us
       </h1>
 
@@ -36,7 +36,7 @@ const Aboutus = () => {
       <div className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 lg:px-32 py-12 gap-10 bg-white">
         <div className="flex-1">
           <img
-            src={assets.about1}
+            src={assets.about2}
             alt="about"
             className="rounded-lg shadow-lg w-full h-auto max-w-md mx-auto"
           />
