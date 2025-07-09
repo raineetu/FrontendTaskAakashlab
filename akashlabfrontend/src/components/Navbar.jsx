@@ -1,37 +1,60 @@
+import { useEffect, useState } from "react";
 import { assets } from "../constants/constants";
 import { Menu } from "lucide-react";
+import MobileView from "./MobileView";
 
 const Navbar = () => {
+  const [scroll, setScroll] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScroll(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <div className="flex justify-between items-center py-4 px-12 bg-[#021738] text-white">
+      <div
+        className={`fixed w-full z-50 flex justify-between items-center py-4 px-6 md:px-12 bg-gray-100 ${
+          scroll ? "bg-opacity-50 backdrop-blur-lg shadow-md" : ""
+        }`}
+      >
         {/* navbar logo */}
-        <div className="cursor-pointer">
-          <img src={assets.logo} alt="company_logo" className="w-20 h-20" />
-          <p>Lorem Company</p>
+        <div className="cursor-pointer flex items-center space-x-2">
+          <img src={assets.logo} alt="company_logo" className="w-16 h-16" />
+          <p className="text-orange-500 font-bold hidden md:block">
+            Lorem Company
+          </p>
         </div>
 
         {/* navbar links */}
         <nav>
-          <ul className="hidden md:flex space-x-12 cursor-pointer text-xl transition-transform duration-300 ease-in-out">
+          <ul className="hidden md:flex space-x-4 lg:space-x-12  cursor-pointer text-xl transition-transform duration-300 ease-in-out">
             <li className="hover:scale-105">Home</li>
             <li className="hover:scale-105">About us</li>
-            <li className="hover:scale-105">Studies</li>
+            <li className="hover:scale-105">Services</li>
             <li className="hover:scale-105">Career</li>
             <li className="hover:scale-105">Blog</li>
           </ul>
         </nav>
 
-        <div className="flex items-center space-x-8">
-          <button className="bg-white text-black p-3 px-6 rounded-full hover:bg-gray-100 font-semibold cursor">
+        <div className="flex items-center space-x-4">
+          <button className="bg-orange-500 text-white p-2 px-4 md:px-6 rounded-full hover:bg-orange-600 font-semibold">
             Contact
           </button>
 
-          <div className="text-white md:hidden">
-            <Menu />
+          {/* Hamburger Menu for Mobile */}
+          <div className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+            <Menu className="cursor-pointer" />
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && <MobileView isOpen={isOpen} setIsOpen={setIsOpen} />}
     </>
   );
 };
