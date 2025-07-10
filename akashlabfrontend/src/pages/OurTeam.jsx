@@ -6,8 +6,8 @@ const OurTeam = () => {
     <div className="bg-gray-50 py-20 px-6 md:px-16 lg:px-24">
       {/* Heading */}
       <SectionHeader
-        title={sectionheader.title}
-        subtitle={sectionheader.subtitle}
+        title={sectionheader[1].title}
+        subtitle={sectionheader[1].subtitle}
       />
       {/* Team  */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">

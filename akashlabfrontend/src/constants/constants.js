@@ -16,11 +16,41 @@ export const assets = {
   member3,
 };
 
-export const sectionheader = {
-  title: "Meet Our Team",
-  subtitle:
-    "A team of passionate professionals committed to delivering excellence and innovation across every project we undertake.",
-};
+export const aboutcomp = [
+  {
+    ptitle: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
+          quibusdam. Suscipit, pariatur. Consequuntur a cumque repellendus dicta
+          autem, maiores temporibus quasi non fugit. Modi commodi ad aliquid est
+          omnis qui? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
+          quibusdam. Suscipit, pariatur. Consequuntur a cumque repellendus dicta
+          autem, maiores temporibus quasi non fugit. Modi commodi ad aliquid est
+          omnis qui?`,
+    image: assets.about1,
+  },
+  {
+    ptitle: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
+          quibusdam. Suscipit, pariatur. Consequuntur a cumque repellendus dicta
+          autem, maiores temporibus quasi non fugit. Modi commodi ad aliquid est
+          omnis qui? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
+          quibusdam. Suscipit, pariatur. Consequuntur a cumque repellendus dicta
+          autem, maiores temporibus quasi non fugit. Modi commodi ad aliquid est
+          omnis qui?`,
+    image: assets.about2,
+  },
+];
+
+export const sectionheader = [
+  {
+    title: "About Us",
+    subtitle:
+      "A team of passionate professionals committed to delivering excellence and innovation across every project we undertake.",
+  },
+  {
+    title: "Meet Our Team",
+    subtitle:
+      "A team of passionate professionals committed to delivering excellence and innovation across every project we undertake.",
+  },
+];
 
 export const teamMembers = [
   {
