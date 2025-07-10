@@ -16,6 +16,12 @@ export const assets = {
   member3,
 };
 
+export const sectionheader = {
+  title: "Meet Our Team",
+  subtitle:
+    "A team of passionate professionals committed to delivering excellence and innovation across every project we undertake.",
+};
+
 export const teamMembers = [
   {
     name: "Nisha Rai",

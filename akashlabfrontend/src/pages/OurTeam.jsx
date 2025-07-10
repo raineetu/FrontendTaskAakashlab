@@ -1,17 +1,14 @@
-import { teamMembers } from "../constants/constants";
+import SectionHeader from "../components/SectionHeader";
+import { teamMembers, sectionheader } from "../constants/constants";
 
 const OurTeam = () => {
   return (
     <div className="bg-gray-50 py-20 px-6 md:px-16 lg:px-24">
       {/* Heading */}
-      <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-4">
-        Meet Our Team
-      </h2>
-      <p className="text-center text-gray-600 text-lg md:text-xl max-w-2xl mx-auto mb-12">
-        A team of passionate professionals committed to delivering excellence
-        and innovation across every project we undertake.
-      </p>
-
+      <SectionHeader
+        title={sectionheader.title}
+        subtitle={sectionheader.subtitle}
+      />
       {/* Team  */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {teamMembers.map((member, index) => (
