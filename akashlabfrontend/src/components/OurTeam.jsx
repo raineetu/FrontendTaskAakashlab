@@ -1,4 +1,3 @@
-import React from "react";
 import { assets } from "../constants/constants";
 
 const teamMembers = [
@@ -23,7 +22,7 @@ const teamMembers = [
   {
     name: "Bikash Thapa",
     position: "Marketing Head",
-    image: assets.member4,
+    image: assets.member1,
     bio: "Strategic thinker driving brand growth and awareness.",
   },
 ];
@@ -40,7 +39,7 @@ const OurTeam = () => {
         and innovation across every project we undertake.
       </p>
 
-      {/* Team Grid */}
+      {/* Team  */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {teamMembers.map((member, index) => (
           <div
