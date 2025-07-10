@@ -44,11 +44,18 @@ const Footer = () => {
         <div className="flex-1 text-center ">
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-400 flex flex-col justify-center items-center md:flex-row md:space-x-6 md:space-y-0">
-            <li className="hover:text-orange-400 cursor-pointer">Home</li>
-            <li className="hover:text-orange-400 cursor-pointer">About Us</li>
-            <li className="hover:text-orange-400 cursor-pointer">Services</li>
-            <li className="hover:text-orange-400 cursor-pointer">Blog</li>
-            <li className="hover:text-orange-400 cursor-pointer">Contact</li>
+            <a href="#">
+              <li className="hover:text-orange-400 cursor-pointer">Home</li>
+            </a>
+            <a href="#news">
+              <li className="hover:text-orange-400 cursor-pointer">News</li>
+            </a>
+            <a href="#about">
+              <li className="hover:text-orange-400 cursor-pointer">About us</li>
+            </a>
+            <a href="#team">
+              <li className="hover:text-orange-400 cursor-pointer">Team</li>
+            </a>
           </ul>
         </div>
 
