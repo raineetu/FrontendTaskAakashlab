@@ -3,7 +3,10 @@ import { teamMembers, sectionheader } from "../constants/constants";
 
 const OurTeam = () => {
   return (
-    <div className="bg-gray-50 py-20 px-6 md:px-16 lg:px-24">
+    <div
+      id="team"
+      className="bg-gray-50 py-20 px-6 md:px-16 lg:px-24 scroll-mt-10"
+    >
       {/* Heading */}
       <SectionHeader
         title={sectionheader[1].title}

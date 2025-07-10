@@ -47,7 +47,10 @@ const Contactform = () => {
   };
 
   return (
-    <div className="bg-gray-50 py-20 px-6 md:px-16 lg:px-24">
+    <div
+      id="contact"
+      className="bg-gray-50 py-20 px-6 md:px-16 lg:px-24 scroll-mt-8"
+    >
       <SectionHeader
         title={sectionheader[2].title}
         subtitle={sectionheader[2].subtitle}

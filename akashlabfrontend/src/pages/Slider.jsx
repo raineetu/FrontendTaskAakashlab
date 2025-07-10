@@ -6,7 +6,7 @@ const Slider = () => {
       <div className="flex flex-col md:flex-row justify-around items-center pt-28 px-4 md:px-15 lg:px-24 ">
         <div className="text-center md:text-left space-y-6 md:space-y-8 flex-1">
           <p className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight">
-            Team of <span className="text-green-600">Professionals</span>
+            Team of <span className="text-green-600">Professionals </span>
             Business
           </p>
           <p className="text-gray-600 text-base sm:text-lg md:text-xl font-medium">

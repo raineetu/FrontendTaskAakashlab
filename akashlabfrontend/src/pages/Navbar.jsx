@@ -32,19 +32,28 @@ const Navbar = () => {
 
         {/* navbar links */}
         <nav>
-          <ul className="hidden md:flex space-x-4 lg:space-x-12  cursor-pointer text-xl transition-transform duration-300 ease-in-out">
-            <li className="hover:scale-105">Home</li>
-            <li className="hover:scale-105">About us</li>
-            <li className="hover:scale-105">Services</li>
-            <li className="hover:scale-105">Career</li>
-            <li className="hover:scale-105">Blog</li>
+          <ul className="hidden md:flex space-x-4 lg:space-x-12 cursor-pointer text-xl transition-transform duration-300 ease-in-out">
+            <li className="hover:scale-105">
+              <a href="#">Home</a>
+            </li>
+            <li className="hover:scale-105">
+              <a href="#about">About us</a>
+            </li>
+            <li className="hover:scale-105">
+              <a href="#services">Services</a>
+            </li>
+            <li className="hover:scale-105">
+              <a href="#team">Team</a>
+            </li>
           </ul>
         </nav>
 
         <div className="flex items-center space-x-4">
-          <button className="bg-orange-500 text-white p-2 px-4 md:px-6 rounded-full hover:bg-orange-600 font-semibold">
-            Contact
-          </button>
+          <a href="#contact">
+            <button className="bg-orange-500 text-white p-2 px-4 md:px-6 rounded-full hover:bg-orange-600 font-semibold">
+              Contact
+            </button>
+          </a>
 
           {/* Hamburger Menu for Mobile */}
           <div className="md:hidden" onClick={() => setIsOpen(!isOpen)}>

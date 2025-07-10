@@ -3,7 +3,7 @@ import { sectionheader, aboutcomp } from "../constants/constants";
 
 const Aboutus = () => {
   return (
-    <div className="pt-20 bg-gray-50">
+    <div id="about" className="pt-20 bg-gray-50 scroll-mt-10">
       {/* Section Heading */}
       <SectionHeader
         title={sectionheader[0].title}
