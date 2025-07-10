@@ -1,5 +1,6 @@
 import Aboutus from "./components/Aboutus";
 import Navbar from "./components/Navbar";
+import OurTeam from "./components/OurTeam";
 import Slider from "./components/Slider";
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar />
       <Slider />
       <Aboutus />
+      <OurTeam />
     </div>
   );
 };
