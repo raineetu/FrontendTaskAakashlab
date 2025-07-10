@@ -1,6 +1,6 @@
 const SectionHeader = ({ title, subtitle }) => {
-  console.log(title, "gfdsgfd");
-  console.log("dsgfdasbfvdc", subtitle);
+  // console.log(title, "gfdsgfd");
+  // console.log("dsgfdasbfvdc", subtitle);
 
   return (
     <div>
