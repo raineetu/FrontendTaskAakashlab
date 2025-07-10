@@ -1,8 +1,8 @@
-import Aboutus from "./components/Aboutus";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import OurTeam from "./components/OurTeam";
-import Slider from "./components/Slider";
+import Navbar from "./pages/Navbar";
+import Slider from "./pages/Slider";
+import Aboutus from "./pages/Aboutus";
+import OurTeam from "./pages/OurTeam";
+import Footer from "./pages/Footer";
 
 const App = () => {
   return (
