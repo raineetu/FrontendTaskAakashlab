@@ -3,6 +3,7 @@ import Slider from "./pages/Slider";
 import Aboutus from "./pages/Aboutus";
 import OurTeam from "./pages/OurTeam";
 import Footer from "./pages/Footer";
+import Contactform from "./pages/Contactform";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Slider />
       <Aboutus />
       <OurTeam />
+      <Contactform />
       <Footer />
     </div>
   );
