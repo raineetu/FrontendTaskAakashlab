@@ -37,11 +37,12 @@ const Navbar = () => {
               <a href="#">Home</a>
             </li>
             <li className="hover:scale-105">
-              <a href="#about">About us</a>
+              <a href="#news">News</a>
             </li>
             <li className="hover:scale-105">
-              <a href="#services">Services</a>
+              <a href="#about">About us</a>
             </li>
+
             <li className="hover:scale-105">
               <a href="#team">Team</a>
             </li>

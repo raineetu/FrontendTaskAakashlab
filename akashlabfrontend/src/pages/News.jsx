@@ -34,7 +34,7 @@ const News = () => {
   }, []);
 
   return (
-    <div id="news" className="p-6 scroll-mt-10">
+    <div id="news" className="p-6 scroll-mt-25">
       <h2 className="text-3xl font-bold text-center text-green-600 mb-6">
         Latest Technology News
       </h2>
