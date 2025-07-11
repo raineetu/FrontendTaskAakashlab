@@ -16,6 +16,30 @@ export const assets = {
   member3,
 };
 
+export const sliderData = [
+  {
+    title: "Team of Professionals",
+    subtitle: "Our expert team is committed to your success.",
+    button1: "Get Started",
+    button2: "See How it Works",
+    image: assets.hero,
+  },
+  {
+    title: "Grow Your Business",
+    subtitle: "We help scale startups and large businesses alike.",
+    button1: "Contact Us",
+    button2: "Learn More",
+    image: assets.hero2,
+  },
+  {
+    title: "Trusted by Thousands",
+    subtitle: "Join our network of successful entrepreneurs.",
+    button1: "Join Now",
+    button2: "Read Stories",
+    image: assets.hero3,
+  },
+];
+
 export const aboutcomp = [
   {
     ptitle: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
