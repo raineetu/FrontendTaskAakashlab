@@ -2,6 +2,13 @@ import { useEffect, useState } from "react";
 import { assets } from "../constants/constants";
 import { Menu } from "lucide-react";
 import MobileView from "./MobileView";
+import {
+  FaHome,
+  FaNewspaper,
+  FaInfoCircle,
+  FaUsers,
+  FaPhoneAlt,
+} from "react-icons/fa";
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
@@ -22,7 +29,7 @@ const Navbar = () => {
           scroll ? "bg-opacity-50 backdrop-blur-lg shadow-md" : ""
         }`}
       >
-        {/* navbar logo */}
+        {/* Logo */}
         <div className="cursor-pointer flex items-center space-x-2">
           <img src={assets.logo} alt="company_logo" className="w-16 h-16" />
           <p className="text-orange-500 font-bold hidden md:block">
@@ -30,33 +37,38 @@ const Navbar = () => {
           </p>
         </div>
 
-        {/* navbar links */}
+        {/* Navigation  */}
         <nav>
-          <ul className="hidden md:flex space-x-4 lg:space-x-12 cursor-pointer text-xl transition-transform duration-300 ease-in-out">
-            <li className="hover:scale-105">
+          <ul className="hidden md:flex space-x-4 lg:space-x-12 cursor-pointer font-semibold text-xl transition-transform duration-300 ease-in-out text-gray-700">
+            <li className="flex items-center gap-2 hover:scale-105 hover:text-orange-500">
+              <FaHome />
               <a href="#">Home</a>
             </li>
-            <li className="hover:scale-105">
+            <li className="flex items-center gap-2 hover:scale-105 hover:text-orange-500">
+              <FaNewspaper />
               <a href="#news">News</a>
             </li>
-            <li className="hover:scale-105">
+            <li className="flex items-center gap-2 hover:scale-105 hover:text-orange-500">
+              <FaInfoCircle />
               <a href="#about">About us</a>
             </li>
-
-            <li className="hover:scale-105">
+            <li className="flex items-center gap-2 hover:scale-105 hover:text-orange-500">
+              <FaUsers />
               <a href="#team">Team</a>
             </li>
           </ul>
         </nav>
 
+        {/* Contact Button and Menu */}
         <div className="flex items-center space-x-4">
           <a href="#contact">
-            <button className="bg-orange-500 text-white p-2 px-4 md:px-6 rounded-full hover:bg-orange-600 font-semibold">
+            <button className="flex items-center gap-2 bg-orange-500 text-white p-2 px-4 md:px-6 rounded-full hover:bg-orange-600 font-semibold">
+              <FaPhoneAlt />
               Contact
             </button>
           </a>
 
-          {/* Hamburger Menu for Mobile */}
+          {/* Mobile Menu for Mobile */}
           <div className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
             <Menu className="cursor-pointer" />
           </div>
