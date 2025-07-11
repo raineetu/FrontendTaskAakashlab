@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import SectionHeader from "../components/SectionHeader";
+import { sectionheader } from "../constants/constants";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const News = () => {
   const [articles, setArticles] = useState([]);
@@ -19,8 +22,6 @@ const News = () => {
         }
       );
       const data = await response.json();
-      //   console.log(data, "dfs");
-
       setArticles(data.data || []);
     } catch (error) {
       console.error("Error fetching news:", error);
@@ -34,24 +35,45 @@ const News = () => {
   }, []);
 
   return (
-    <div id="news" className="p-6 scroll-mt-25">
-      <h2 className="text-3xl font-bold text-center text-green-600 mb-6">
-        Latest Technology News
-      </h2>
+    <div id="news" className="p-6 scroll-mt-24 bg-gray-50">
+      <SectionHeader
+        title={sectionheader[3].title}
+        subtitle={sectionheader[3].subtitle}
+      />
       {loading ? (
-        <p className="text-center text-gray-500">Loading...</p>
+        <p className="text-center text-gray-500 text-lg">
+          Loading latest news...
+        </p>
       ) : (
-        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-12">
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 md:px-12">
           {articles.slice(0, 4).map((item, index) => (
             <div
               key={index}
-              className="border border-gray-300 rounded-lg p-4 shadow-md hover:shadow-lg transition"
+              className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition duration-300 p-6 flex flex-col justify-between"
             >
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
-                <h3 className="text-xl font-semibold text-gray-600 hover:underline">
-                  {item.title}
-                </h3>
-              </a>
+              <div>
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block mb-3"
+                >
+                  <h3 className="text-lg font-bold text-gray-800 hover:text-orange-600 transition line-clamp-3">
+                    {item.title}
+                  </h3>
+                </a>
+              </div>
+
+              <div className="mt-4 flex justify-between items-center">
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-orange-500 hover:underline flex items-center gap-1"
+                >
+                  Read More <FaExternalLinkAlt size={12} />
+                </a>
+              </div>
             </div>
           ))}
         </div>

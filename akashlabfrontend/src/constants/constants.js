@@ -86,6 +86,11 @@ export const sectionheader = [
     subtitle:
       "A team of passionate professionals committed to delivering excellence and innovation across every project we undertake.",
   },
+  {
+    title: "Latest News",
+    subtitle:
+      "A team of passionate professionals committed to delivering excellence and innovation across every project we undertake.",
+  },
 ];
 
 export const teamMembers = [
