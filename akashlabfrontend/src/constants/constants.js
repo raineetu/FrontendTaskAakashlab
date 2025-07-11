@@ -49,23 +49,11 @@ export const sliderData = [
 
 export const aboutcomp = [
   {
-    ptitle: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
-          quibusdam. Suscipit, pariatur. Consequuntur a cumque repellendus dicta
-          autem, maiores temporibus quasi non fugit. Modi commodi ad aliquid est
-          omnis qui? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
-          quibusdam. Suscipit, pariatur. Consequuntur a cumque repellendus dicta
-          autem, maiores temporibus quasi non fugit. Modi commodi ad aliquid est
-          omnis qui?`,
+    ptitle: `At Akash Lab, we believe that innovation begins with purpose. Our first step toward every solution is understanding your needs—deeply and thoroughly. We blend modern technologies with proven methods to deliver meaningful outcomes that scale. Our team is passionate about solving real-world problems and turning ideas into impactful digital products.`,
     image: assets.about1,
   },
   {
-    ptitle: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
-          quibusdam. Suscipit, pariatur. Consequuntur a cumque repellendus dicta
-          autem, maiores temporibus quasi non fugit. Modi commodi ad aliquid est
-          omnis qui? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
-          quibusdam. Suscipit, pariatur. Consequuntur a cumque repellendus dicta
-          autem, maiores temporibus quasi non fugit. Modi commodi ad aliquid est
-          omnis qui?`,
+    ptitle: `Our approach is simple yet powerful: listen, create, and refine. We work closely with clients throughout the process, maintaining transparency and adapting to feedback. From startups to enterprises, our tailored strategies help businesses grow stronger and faster. With a focus on quality and performance, we turn complexity into clarity and opportunities into success.`,
     image: assets.about2,
   },
 ];
@@ -74,22 +62,22 @@ export const sectionheader = [
   {
     title: "About Us",
     subtitle:
-      "A team of passionate professionals committed to delivering excellence and innovation across every project we undertake.",
+      "We are a passionate team of developers, designers, and strategists focused on delivering top-quality digital solutions tailored to your success.",
   },
   {
     title: "Meet Our Team",
     subtitle:
-      "A team of passionate professionals committed to delivering excellence and innovation across every project we undertake.",
+      "Our diverse team brings together a blend of experience, creativity, and drive to help businesses innovate and grow in a digital-first world.",
   },
   {
     title: "Contact Us",
     subtitle:
-      "A team of passionate professionals committed to delivering excellence and innovation across every project we undertake.",
+      "Have questions or ideas? We'd love to hear from you. Reach out to us and let’s build something great together.",
   },
   {
     title: "Latest News",
     subtitle:
-      "A team of passionate professionals committed to delivering excellence and innovation across every project we undertake.",
+      "Stay updated with the latest trends, insights, and developments in technology and innovation from our expert contributors.",
   },
 ];
 
@@ -98,24 +86,24 @@ export const teamMembers = [
     name: "Nisha Rai",
     position: "CEO & Founder",
     image: assets.member1,
-    bio: "Visionary leader focused on innovation and team growth.",
+    bio: "A visionary entrepreneur with a passion for technology and empowering others. Nisha leads with heart, strategy, and a relentless focus on results.",
   },
   {
     name: "Ravi Shrestha",
     position: "Lead Developer",
     image: assets.member2,
-    bio: "Expert in full-stack development and clean architecture.",
+    bio: "Ravi crafts clean, efficient code and scalable systems. His depth in full-stack development helps power our most complex projects.",
   },
   {
     name: "Anjali K.C.",
     position: "UX/UI Designer",
     image: assets.member3,
-    bio: "Designs elegant, user-centered interfaces with empathy.",
+    bio: "Anjali designs with empathy and precision. She ensures every user experience is smooth, intuitive, and visually compelling.",
   },
   {
     name: "Bikash Thapa",
     position: "Marketing Head",
     image: assets.member1,
-    bio: "Strategic thinker driving brand growth and awareness.",
+    bio: "Bikash brings bold strategies and market insights to life. His work connects our brand to the right audience, at the right time.",
   },
 ];
