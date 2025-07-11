@@ -22,24 +22,27 @@ export const assets = {
 
 export const sliderData = [
   {
-    title: "Team of Professionals",
-    subtitle: "Our expert team is committed to your success.",
+    title: "Dedicated Team of Experienced Professionals Who Drive Excellence",
+    subtitle:
+      "Our expert team comprises industry-leading professionals who are committed to delivering top-notch solutions tailored to your business needs. From planning to execution, we ensure your journey to success is well-guided.",
     button1: "Get Started",
-    button2: "See How it Works",
+    text: "See How it Works",
     image: assets.hero,
   },
   {
-    title: "Grow Your Business",
-    subtitle: "We help scale startups and large businesses alike.",
+    title: "Empower and Grow Your Business with Scalable, Smart Strategies",
+    subtitle:
+      "Whether you're a startup or a well-established enterprise, we provide scalable solutions that adapt to your growth. Leverage our strategic expertise to expand your reach and elevate your brand.",
     button1: "Contact Us",
-    button2: "Learn More",
+    text: "Learn More",
     image: assets.hero2,
   },
   {
-    title: "Trusted by Thousands",
-    subtitle: "Join our network of successful entrepreneurs.",
+    title: "Trusted by Thousands of Happy Clients Across the Globe",
+    subtitle:
+      "Join our growing community of satisfied entrepreneurs and enterprises. Discover how our innovative approach and reliable services have transformed businesses worldwide.",
     button1: "Join Now",
-    button2: "Read Stories",
+    text: "Read Stories",
     image: assets.hero3,
   },
 ];
