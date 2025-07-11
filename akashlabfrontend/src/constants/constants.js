@@ -1,5 +1,7 @@
 import logo from "../assets/logo.png";
 import hero from "../assets/hero.png";
+import hero2 from "../assets/hero2.png";
+import hero3 from "../assets/hero3.png";
 import about1 from "../assets/about1.png";
 import about2 from "../assets/about2.png";
 import member1 from "../assets/member1.jpg";
@@ -9,6 +11,8 @@ import member3 from "../assets/member3.jpg";
 export const assets = {
   logo,
   hero,
+  hero2,
+  hero3,
   about1,
   about2,
   member1,
